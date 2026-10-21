@@ -1,5 +1,5 @@
 // Grand Line Battle: tutto in cache, il gioco funziona offline.
-const CACHE = "grandline-c8ea68fac604";
+const CACHE = "grandline-2f18b7289d9a";
 const FILES = ["./", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "index.html", "manifest.webmanifest"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
